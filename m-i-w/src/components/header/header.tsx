@@ -3,7 +3,7 @@ import MainMenu from "../main-menu/MainMenu";
 
 export default function Header() {
     return (
-        <header className="flex justify-between bg-gray-300 p-2">
+        <header className="flex justify-between bg-gray-300 p-2 dark:bg-neutral-600 dark:text-neutral-200 ">
             <Logo/>
      
             <MainMenu
