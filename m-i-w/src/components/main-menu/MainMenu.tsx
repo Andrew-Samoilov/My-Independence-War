@@ -1,4 +1,6 @@
+
 import Link from "next/link"
+
 interface MainMenuProps {
     onClickFunction?: any;
     styleNav?: string;
@@ -7,10 +9,12 @@ interface MainMenuProps {
 }
 
 export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunction }: MainMenuProps) {
+
     return (
         <nav className={styleNav}>
             <ul className={styleUL}>
-                <li className={styleMenuItem} onClick={onClickFunction}>
+                <li className={styleMenuItem}
+                    onClick={onClickFunction}>
                     <Link href="/time-line">Time line</Link>
                 </li>
                 <li className={styleMenuItem} onClick={onClickFunction}>
@@ -18,6 +22,5 @@ export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunc
                 </li>
             </ul>
         </nav>
-
     )
 }

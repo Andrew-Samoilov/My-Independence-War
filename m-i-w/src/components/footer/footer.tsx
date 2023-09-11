@@ -6,18 +6,24 @@ import MainMenu from "../main-menu/MainMenu";
 export default function Footer() {
     return (
         <footer className="bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2 fixed inset-x-0 bottom-0">
-            <div className="grid grid-rows-1 grid-cols-4 gap-2">
-                <Logo />
+            <div className="sm:grid sm:grid-rows-1 sm:grid-cols-3 gap-2 grid grid-cols-1">
+            {/* <div className="flex justify-between sm:flex-col"> */}
+                <Logo
+                    textLogo="My Independence War"
+                    styleLogo="text-teal-500 font-bold text-center sm:text-left "
+                />
+                <hr className="sm:hidden dark:border-neutral-700 block" />
                 <MainMenu
-                    styleUL="grid grid-cols-1 gap-2"
+                    styleUL="grid grid-cols-1 gap-2 text-center sm:text-left"
                 />
                 <div className="pb-2">
-                    <p className="font-semibold pb-2">Contacts</p>
+                    <hr className="sm:hidden dark:border-neutral-700 block"/>
+                    <p className="font-semibold pb-2 text-center sm:text-left">Contacts</p>
                     <ul className="grid grid-cols-1 gap-2">
                         <li>
                             <Link
                                 href='tel:+380973232161'
-                                className="flex items-center justify-center md:justify-start"
+                                className="flex items-center justify-center sm:justify-start"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +41,7 @@ export default function Footer() {
                             <Link
                                 href='mailto:veprsag@gmail.com'
                                 target='_blank'
-                                className="flex items-center justify-center md:justify-start"
+                                className="flex items-center justify-center sm:justify-start"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +59,7 @@ export default function Footer() {
                             <Link
                                 href='https://t.me/Andrew_Samoilov'
                                 target='_blank'
-                                className="flex items-center justify-center md:justify-start"
+                                className="flex items-center justify-center sm:justify-start"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

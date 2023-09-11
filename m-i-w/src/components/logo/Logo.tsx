@@ -1,7 +1,15 @@
 import Link from "next/link"
 
-export default function Logo() {
+interface LogoProps {
+    textLogo?: string;
+    styleLogo?: string;
+}
+
+export default function Logo({ styleLogo = 'text-teal-500 font-bold', textLogo = 'MIW' }: LogoProps) {
     return (
-        <Link href="/" className="text-teal-500 font-bold">MIW</Link>
+        <Link
+            href="/"
+            className={styleLogo}
+        >{textLogo}</Link >
     )
 }
