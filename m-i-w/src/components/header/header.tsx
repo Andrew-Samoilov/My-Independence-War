@@ -12,9 +12,11 @@ export default function Header() {
                 styleNav='hidden sm:block'
                 styleUL="grid grid-cols-3 gap-8"
             />
+
             <ThemeSelect
                 styleSelectTheme='hidden sm:block'
             />
+            
             <LanguageSelect
                 styleSelectLanguage='hidden sm:block'
             />
