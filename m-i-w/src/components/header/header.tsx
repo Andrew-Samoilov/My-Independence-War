@@ -1,7 +1,7 @@
 import Logo from "../logo/Logo";
 import MainMenu from "../main-menu/MainMenu";
 import ThemeSelect from "./ThemeSelect";
-import LangSelect from "./LangSelect";
+import LanguageSelect from "./LanguageSelect";
 
 export default function Header() {
     return (
@@ -9,12 +9,17 @@ export default function Header() {
             <Logo />
 
             <MainMenu
-                styleUL="grid grid-cols-2 gap-8"
+                styleNav='hidden sm:block'
+                styleUL="grid grid-cols-3 gap-8"
             />
-            <ThemeSelect />
-            <LangSelect />
+            <ThemeSelect
+                styleSelectTheme='hidden sm:block'
+            />
+            <LanguageSelect
+                styleSelectLanguage='hidden sm:block'
+            />
 
-            <button>Mobile menu</button>
+            <button className="sm:hidden">Mobile menu</button>
         </header >
     )
 }

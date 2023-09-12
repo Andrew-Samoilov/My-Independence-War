@@ -1,4 +1,3 @@
-
 import Link from "next/link"
 
 interface MainMenuProps {
@@ -16,6 +15,9 @@ export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunc
                 <li className={styleMenuItem}
                     onClick={onClickFunction}>
                     <Link href="/time-line">Time line</Link>
+                </li>
+                <li className={styleMenuItem} onClick={onClickFunction}>
+                    <Link href="/map-view">Map view</Link>
                 </li>
                 <li className={styleMenuItem} onClick={onClickFunction}>
                     <Link href="/about">About</Link>
