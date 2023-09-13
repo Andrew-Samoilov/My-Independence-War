@@ -1,3 +1,20 @@
+// import type { InferGetStaticPropsType, GetStaticProps } from 'next'
+
+// type Repo = {
+//     date: string
+//     title: string
+//     place: string
+// }
+
+// export const getStaticProps = (async (context) => {
+//     const res = await fetch('./src/app/_files/24.json')
+//     const repo = await res.json()
+//     return { props: { repo } }
+// }) satisfies GetStaticProps<{
+//     repo: Repo
+// }>
+
+
 export default function TimeLine() {
     return (
         <section>

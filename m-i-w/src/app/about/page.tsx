@@ -3,7 +3,8 @@ export default function About() {
         <section>
             <h1 className="text-2xl">About</h1>
             <p>Technological demo project that talks about my Ukraine war stories</p>
-            <h2 className="text-xl">Tech stack</h2>
+            <h2 className="text-xl m-8 text-center">Tech stack</h2>
+            <p>Maybe make technology section like logo clouds</p>
             <ul>
                 <li>React</li>
                 <li>Next JS</li>
