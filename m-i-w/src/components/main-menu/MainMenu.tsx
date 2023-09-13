@@ -16,9 +16,9 @@ export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunc
                     onClick={onClickFunction}>
                     <Link href="/time-line">Time line</Link>
                 </li>
-                <li className={styleMenuItem} onClick={onClickFunction}>
+                {/* <li className={styleMenuItem} onClick={onClickFunction}>
                     <Link href="/map-view">Map view</Link>
-                </li>
+                </li> */}
                 <li className={styleMenuItem} onClick={onClickFunction}>
                     <Link href="/about">About</Link>
                 </li>
