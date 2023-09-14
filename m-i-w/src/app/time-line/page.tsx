@@ -27,12 +27,12 @@ export default function TimeLine() {
     console.log(data);
 
     return (
-        <section className='p-2'>
+        <section>
             <h1>Time line</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda saepe, aperiam veniam consectetur alias ipsam dolorem quod, omnis facilis reiciendis distinctio tempore? Labore error cum quibusdam, similique maxime iste!</p>
 
             {data.posts?.map((post: IpostItem) => (
-                <div key={post.date} className='p-2'>
+                <div key={post.date} className='p-2 border-solid border-2 border-gray-200 dark:border-gray-600'>
                     <h2 className='text-xl'>{post.title}</h2>
                     <div className='text-right italic text-m'>
                         <p>{post.date}</p>
@@ -44,7 +44,7 @@ export default function TimeLine() {
             }
 
             <hr />
-            <p className='italic bg-gray-200'>Items loaded with simple import</p>
+            <p className='italic bg-gray-200 dark:bg-neutral-600 dark:text-neutral-200'>Items loaded with simple import</p>
         </section>
     )
 }

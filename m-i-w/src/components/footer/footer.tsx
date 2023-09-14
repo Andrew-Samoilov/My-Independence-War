@@ -5,7 +5,8 @@ import MainMenu from "../main-menu/MainMenu";
 
 export default function Footer() {
     return (
-        <footer className="bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2 fixed inset-x-0 bottom-0">
+        // <footer className="bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2 fixed inset-x-0 bottom-0">
+        <footer className="bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2">
             <div className="sm:grid sm:grid-rows-1 sm:grid-cols-3 gap-2 grid grid-cols-1">
             {/* <div className="flex justify-between sm:flex-col"> */}
                 <Logo
