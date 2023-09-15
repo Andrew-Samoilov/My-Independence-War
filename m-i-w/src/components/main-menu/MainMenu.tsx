@@ -22,6 +22,9 @@ export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunc
                 <li className={styleMenuItem} onClick={onClickFunction}>
                     <Link href="/about">About</Link>
                 </li>
+                <li className={styleMenuItem} onClick={onClickFunction}>
+                    <Link href="/contact">Contact</Link>
+                </li>
             </ul>
         </nav>
     )
