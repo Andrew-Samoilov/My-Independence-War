@@ -8,7 +8,7 @@ export default function Home() {
         {/* <h1 className="text-2xl">Main page</h1> */}
         {/* <!-- Jumbotron --> */}
         <section
-          className="bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
+          className="bg-neutral-100 p-6 text-neutral-700 shadow-md dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
           <h2 className="mb-5 text-3xl font-semibold">Hi there!</h2>
           <p>
             This simple page uses cutting-edge <span className="text-teal-500">(React, Next JS, TypeScript, Tailwind, Tailwind elements)</span> technologies.

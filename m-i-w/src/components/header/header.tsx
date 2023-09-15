@@ -5,7 +5,7 @@ import LanguageSelect from "./LanguageSelect";
 
 export default function Header() {
     return (
-        <header className="sticky top-0 w-full flex justify-between bg-gray-300 p-2 dark:bg-neutral-600 dark:text-neutral-200 ">
+        <header className="sticky top-0 shadow-md flex justify-between bg-gray-300 p-2 dark:bg-neutral-600 dark:text-neutral-200 ">
             <Logo />
 
             <MainMenu
