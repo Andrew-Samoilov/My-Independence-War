@@ -11,7 +11,7 @@ export default function Home() {
           className="bg-neutral-100 p-6 text-neutral-700 shadow-md dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
           <h2 className="mb-5 text-3xl font-semibold">Hi there!</h2>
           <p>
-            This simple page uses cutting-edge <span className="text-teal-500">(React, Next JS, TypeScript, Tailwind, Tailwind elements)</span> technologies.
+            This simple page uses cutting-edge <span className="text-teal-500">(React, Next JS, TypeScript, Tailwind)</span> technologies.
           </p>
           <hr
             className="my-6 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
@@ -29,7 +29,7 @@ export default function Home() {
         {/* <!-- Jumbotron --> */}
 
         {/* Content */}
-        <div className="text-neutral-700 dark:text-neutral-200">
+        <section className="text-neutral-700 dark:text-neutral-200">
           <p className="my-4">Scroll down</p>
           <p className="mb-4">Scroll down</p>
           <p className="mb-4">Scroll down</p>
@@ -38,7 +38,7 @@ export default function Home() {
           <p className="mb-4">Scroll down</p>
           <p className="mb-4">Scroll down</p>
           <p className="mb-4">Scroll down</p>
-        </div>
+        </section>
       </main>
       
     </>
