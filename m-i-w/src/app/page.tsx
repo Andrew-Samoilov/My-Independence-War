@@ -1,12 +1,7 @@
-
-
-export default function Home() {
+export default function Home({pageProps}:any) {
   return (
     <>
-      {/* <Header /> */}
       <main className="flex flex-col items-center justify-between p-0 bg-neutral-50 text-center text-neutral-800 dark:bg-neutral-700 dark:text-neutral-200">
-        {/* <h1 className="text-2xl">Main page</h1> */}
-        {/* <!-- Jumbotron --> */}
         <section
           className="bg-neutral-100 p-6 text-neutral-700 shadow-md dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
           <h2 className="mb-5 text-3xl font-semibold">Hi there!</h2>
@@ -40,7 +35,6 @@ export default function Home() {
           <p className="mb-4">Scroll down</p>
         </section>
       </main>
-      
     </>
   )
 }

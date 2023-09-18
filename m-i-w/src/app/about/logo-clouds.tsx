@@ -61,6 +61,9 @@ export default function LogoClouds() {
                     />
                     Tailwind Elements
                 </li>
+                <li className="rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
+                    Gray matter
+                </li>
             </ul>
         </section>
     )

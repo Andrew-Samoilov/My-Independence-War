@@ -1,11 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
 
 import Header from '@/components/header/header';
 import Footer from '@/components/footer/footer';
-
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'My Independence War',
@@ -19,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='p-2'>
-      <body className={roboto.className}>
+      <body>
         <Header />
         {children}
         <Footer />

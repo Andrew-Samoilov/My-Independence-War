@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/time-line/_page.tsx", "src/app/time-line/_._"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/time-line/_page.tsx", "src/app/time-line/_._", "src/app/time-line/page.tsx"],
   "exclude": ["node_modules"]
 }
