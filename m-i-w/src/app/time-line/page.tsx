@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Date from '@/components/date';
+
 import { getSortedPostsData } from '@/lib/posts';
 
 interface IpostItem {
@@ -43,13 +46,22 @@ export default function TimeLine() {
             <hr />
             <h2>Blog</h2>
             <ul>
-                {allPostsData?.map(({ id, date, title }: any) => (
+                {/* {allPostsData?.map(({ id, date, title }: any) => (
                     <li key={id}>
                         {title}
                         <br />
                         {id}
                         <br />
                         {date}
+                    </li>
+                ))} */}
+                {allPostsData.map(({ id, date, title }: any) => (
+                    <li key={id}>
+                        <Link href={`/posts/${id}`}>{title}</Link>
+                        <br />
+                        <small>
+                            <Date dateString={date} />
+                        </small>
                     </li>
                 ))}
             </ul>
