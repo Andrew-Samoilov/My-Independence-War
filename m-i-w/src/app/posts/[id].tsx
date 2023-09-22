@@ -3,12 +3,6 @@ import Date from '../../components/date';
 
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
-// import type {
-//     InferGetStaticPropsType,
-//     GetStaticProps,
-//     GetStaticPaths,
-// } from 'next'
-
 export default function Post({ postData }:any) {
     return (
         <>
