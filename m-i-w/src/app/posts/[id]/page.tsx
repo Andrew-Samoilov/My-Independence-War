@@ -1,5 +1,9 @@
+import { getAllPostIds } from "@/lib/posts"
+
 export function generateStaticParams() {
-    return [{ id: '1' }, { id: '2' }, { id: '3' }]
+    const res = getAllPostIds();
+    // return [{ id: '1' }, { id: '2' }, { id: '3' }];
+    return res;
 }
 
 export default function Page({ params }: { params: { id: string } }) {
@@ -7,7 +11,7 @@ export default function Page({ params }: { params: { id: string } }) {
     return (
         <>
         <div>
-            <h1>Pages № {id}</h1>
+            <h1>Pages id {id}</h1>
             </div>
         </>
     )
