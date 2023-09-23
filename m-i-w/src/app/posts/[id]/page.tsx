@@ -1,4 +1,4 @@
-import { getAllPostIds } from "@/lib/posts"
+import { getAllPostIds, getPostData } from "@/lib/posts"
 
 export function generateStaticParams() {
     const res = getAllPostIds();
@@ -7,11 +7,27 @@ export function generateStaticParams() {
 }
 
 export default function Page({ params }: { params: { id: string } }) {
-    const { id } = params
+    const { id } = params;
+
+    async function fetchData() {
+        try {
+            const postData = (await getPostData(id));
+            console.log('inside fetchData',postData); // Тут ви маєте доступ до отриманих даних
+            return postData.contentHtml;
+        } catch (error) {
+            console.error(error); // Обробка помилки, якщо є
+        }
+    }
+
+    let postData= fetchData();
+
+    console.log(`post data ${postData}`);
+
     return (
         <>
-        <div>
-            <h1>Pages id {id}</h1>
+            <div>
+                <h1 className='text-center text-2xl'>Pages id {id}</h1>
+                {postData}
             </div>
         </>
     )
