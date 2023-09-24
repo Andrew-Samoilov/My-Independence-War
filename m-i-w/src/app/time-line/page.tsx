@@ -8,18 +8,15 @@ export default function TimeLine() {
 
     return (
         <section>
-            <h1 className='text-center text-2xl'>Time line</h1>
-            <hr />
-            <ul>
+            <h1 className='text-center text-2xl font-bold p-6'>Time line</h1>
+            <ul className='grid gap-6'>
                 {allPostsData.map(({ id, date, title }: any) => (
-                    <li key={id}>
+                    <li key={id} >
                         <Link href={`/posts/${id}`} className='text-xl'>{title}</Link>
                         <br />
-                        <div className='text-right'>
-                            <small>
-                                <Date dateString={date} />
-                            </small>
-                        </div>
+                        <small>
+                            <Date dateString={date} />
+                        </small>
                     </li>
                 ))}
             </ul>
