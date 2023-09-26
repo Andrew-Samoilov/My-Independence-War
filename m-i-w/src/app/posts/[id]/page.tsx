@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Date from '@/components/date';
+import Image from 'next/image';
 
 import { getAllPostIds, getPostData } from "@/lib/posts";
 
@@ -27,13 +28,21 @@ export default function Post({ params }: { params: { id: string } }) {
 
     // console.log(`content ${content}`);
     return (
-        <div>
-            <h1 className='font-bold text-center text-2xl p-6'>{data.title}</h1>
+        <div className='container mx-auto md:px-6'>
+            <h1>{data.title}</h1>
             <div className='flex justify-between pb-6'>
                 <div>{data.place}</div>
                 <Date dateString={data.date} />
             </div>
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <ReactMarkdown
+                components={{
+                    img: (props) => (
+                        <Image src={props.src} alt={props.alt} width={1200} />
+                    ),
+                }}
+            >
+                {content}
+            </ReactMarkdown>
         </div>
     );
 }

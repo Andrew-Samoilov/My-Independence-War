@@ -15,6 +15,9 @@ export default function Home({ pageProps }: any) {
           <p className="mb-4">
             Content talking about some of my Ukraine Independence War stories.
           </p>
+          <p className="mb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores excepturi pariatur debitis nostrum repellendus neque. Illum esse nemo iusto accusantium expedita nobis omnis aspernatur? Porro odio doloribus aut velit nisi?
+          </p>
           <Link
             type="button"
             href='./time-line'

@@ -1,27 +1,29 @@
 import Logo from "../logo/Logo";
 import MainMenu from "../main-menu/MainMenu";
-import ThemeSelect from "./ThemeSelect";
-import LanguageSelect from "./LanguageSelect";
+// import ThemeSelect from "./ThemeSelect";
+// import LanguageSelect from "./LanguageSelect";
 
 export default function Header() {
     return (
-        <header className="sticky top-0 shadow-md flex justify-between bg-gray-300 p-2 dark:bg-neutral-600 dark:text-neutral-200 ">
-            <Logo />
+        <header className="sticky top-0 shadow-md  bg-gray-300 p-2 dark:bg-neutral-600 dark:text-neutral-200 ">
+            <nav className="container mx-auto md:px-6 flex justify-between">
+                <Logo />
 
-            <MainMenu
-                styleNav='hidden sm:block'
-                styleUL="grid grid-cols-3 gap-8"
-            />
+                <MainMenu
+                    styleNav='hidden sm:block'
+                    styleUL="grid grid-cols-3 gap-8"
+                />
 
-            <ThemeSelect
-                styleSelectTheme='hidden sm:block'
-            />
-            
-            <LanguageSelect
-                styleSelectLanguage='hidden sm:block'
-            />
+                {/* <ThemeSelect
+                    styleSelectTheme='hidden sm:block'
+                /> */}
 
-            <button className="sm:hidden">Mobile menu</button>
+                {/* <LanguageSelect
+                    styleSelectLanguage='hidden sm:block'
+                /> */}
+
+                <button className="sm:hidden">Mobile menu</button>
+            </nav>
         </header >
     )
 }

@@ -7,7 +7,7 @@ export default function TimeLine() {
     const allPostsData = getSortedPostsData();
 
     return (
-        <section>
+        <section className='container mx-auto md:px-6'>
             <h1 className='text-center text-2xl font-bold p-6'>Time line</h1>
             <ul className='grid gap-6'>
                 {allPostsData.map(({ id, date, title }: any) => (

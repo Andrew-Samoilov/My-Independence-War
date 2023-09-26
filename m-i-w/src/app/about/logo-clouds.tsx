@@ -11,7 +11,7 @@ export default function LogoClouds() {
         <section className="container my-24 mx-auto md:px-6 mb-32 text-center">
             <h2 className="mb-16 text-3xl font-bold">Tech stack</h2>
             <ul className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                <li className="rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
+                <li className="h-full justify-center rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
                     <Image
                         src={logoReact}
                         alt='logo React.JS'
@@ -21,7 +21,7 @@ export default function LogoClouds() {
                     />
                     React
                 </li>
-                <li className="rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
+                <li className="h-full justify-center rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
                     <Image
                         src={logoNext}
                         alt='logo Next JS'
@@ -31,7 +31,7 @@ export default function LogoClouds() {
                     />
                     Next JS
                 </li>
-                <li className="rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
+                <li className="h-full justify-center rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
                     <Image
                         src={logoTypeScript}
                         alt='logo TypeScript'
@@ -41,7 +41,7 @@ export default function LogoClouds() {
                     />
                     TypeScript
                 </li>
-                <li className="rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
+                <li className="h-full justify-centerrounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
                     <Image
                         src={logoTailwind}
                         alt='logo Next JS'
@@ -51,7 +51,7 @@ export default function LogoClouds() {
                     />
                     Tailwind.css
                 </li>
-                <li className="rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
+                <li className="h-full justify-center rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
                     <Image
                         src={logoTailwindElements}
                         alt='logo Tailwind Elements'
@@ -61,8 +61,8 @@ export default function LogoClouds() {
                     />
                     Tailwind Elements
                 </li>
-                <li className="rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
-                    Gray matter
+                <li className="h-full justify-center rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
+                    Remark
                 </li>
             </ul>
         </section>
