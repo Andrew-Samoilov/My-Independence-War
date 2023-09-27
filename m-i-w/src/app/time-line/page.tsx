@@ -23,7 +23,7 @@ export default function TimeLine() {
 
             <hr />
             <small>
-                <p className='italic bg-gray-200 dark:bg-neutral-600 dark:text-neutral-200'>Items loaded from separate *.md files in folder</p>
+                <p className='italic text-right w-100 bg-gray-200 dark:bg-neutral-600 dark:text-neutral-200'>Items loaded from separate *.md files in folder</p>
             </small>
         </section>
     )
