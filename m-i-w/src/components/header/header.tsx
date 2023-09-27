@@ -12,6 +12,7 @@ export default function Header() {
                 <MainMenu
                     styleNav='hidden sm:block'
                     styleUL="grid grid-cols-3 gap-8"
+                    styleMenuItem="list-none"
                 />
 
                 {/* <ThemeSelect

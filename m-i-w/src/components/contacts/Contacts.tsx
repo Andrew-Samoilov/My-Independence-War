@@ -9,7 +9,7 @@ export default function Contacts({ styleUl, styleLink }: IContactsProps) {
     return (
         // <ul className="grid grid-cols-1 gap-2">
         <ul className={styleUl}>
-            <li>
+            <li className="list-none">
                 <Link
                     href='mailto:veprsag@gmail.com'
                     target='_blank'
@@ -27,7 +27,7 @@ export default function Contacts({ styleUl, styleLink }: IContactsProps) {
                     </svg>
                     veprsag@gmail.com</Link>
             </li>
-            <li>
+            <li className="list-none">
                 <Link
                     href='https://t.me/Andrew_Samoilov'
                     target='_blank'
@@ -43,7 +43,7 @@ export default function Contacts({ styleUl, styleLink }: IContactsProps) {
                     </svg>
                     @Andrew_Samoilov</Link>
             </li>
-            <li>
+            <li className="list-none">
                 <Link
                     href='tel:+380973232161'
                     // className="flex items-center justify-center sm:justify-start"

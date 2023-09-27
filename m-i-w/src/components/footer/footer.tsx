@@ -15,6 +15,7 @@ export default function Footer() {
                 <hr className="sm:hidden dark:border-neutral-700 block" />
                 <MainMenu
                     styleUL="grid grid-cols-1 gap-2 text-center sm:text-left"
+                    styleMenuItem="list-none"
                 />
                 <div className="pb-2">
                     <hr className="sm:hidden dark:border-neutral-700 block"/>
