@@ -3,9 +3,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Date from '@/components/date';
-import Image from 'next/image';
+// import Image from 'next/image';
 
-import { getAllPostIds, getPostData } from "@/lib/posts";
+import { getAllPostIds} from "@/lib/posts";
 
 interface PostData {
     content: string;
@@ -34,13 +34,7 @@ export default function Post({ params }: { params: { id: string } }) {
                 <div>{data.place}</div>
                 <Date dateString={data.date} />
             </div>
-            <ReactMarkdown
-                components={{
-                    img: (props) => (
-                        <Image src={props.src} alt={props.alt} width={1200} />
-                    ),
-                }}
-            >
+            <ReactMarkdown>
                 {content}
             </ReactMarkdown>
         </div>
