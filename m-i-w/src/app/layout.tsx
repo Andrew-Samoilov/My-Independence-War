@@ -4,15 +4,10 @@ import type { Metadata } from 'next';
 import Header from '@/components/header/header';
 import Footer from '@/components/footer/footer';
 
-// export const metadata: Metadata = {
-//   title: 'My Independence War',
-//   description: 'Technological demo project that talks about my Ukraine war stories',
-// }
-
 export const metadata: Metadata = {
   title: {
     template: '%s | My Independence War',
-    default: 'My Independence War', // a default is required when creating a template
+    default: 'My Independence War', 
   },
   description: 'Technological demo project that talks about my Ukraine war stories',
 }

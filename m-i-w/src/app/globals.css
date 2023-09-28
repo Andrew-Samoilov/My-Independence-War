@@ -4,16 +4,16 @@
 
 @layer base {
   h1 {
-    @apply text-2xl font-extrabold text-center p-6;
+    @apply text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left;
   }
   h2 {
-    @apply text-xl p-4 font-bold;
+    @apply mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight;
   }
   h3 {
-    @apply text-lg font-bold;
+    @apply mb-4 text-4xl lg:text-6xl leading-tight;
   }
-    h4 {
-    @apply font-semibold;
+  h4 {
+    @apply mb-2 text-2xl lg:text-4xl leading-tight font-semibold;
   }
   a {
     @apply hover:underline;
