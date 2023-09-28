@@ -5,6 +5,12 @@ import ReactMarkdown from 'react-markdown';
 import Date from '@/components/date';
 // import Image from 'next/image';
 
+// import { Metadata } from 'next'
+
+// export const metadata: Metadata = {
+//     title: 'My Page Title',
+// }
+
 import { getAllPostIds} from "@/lib/posts";
 
 interface PostData {
@@ -28,7 +34,7 @@ export default function Post({ params }: { params: { id: string } }) {
 
     // console.log(`content ${content}`);
     return (
-        <div className='container mx-auto md:px-6'>
+        <article className='container mx-auto md:px-6'>
             <h1>{data.title}</h1>
             <div className='flex justify-between pb-6'>
                 <div>{data.place}</div>
@@ -37,6 +43,6 @@ export default function Post({ params }: { params: { id: string } }) {
             <ReactMarkdown>
                 {content}
             </ReactMarkdown>
-        </div>
+        </article>
     );
 }
