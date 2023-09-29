@@ -7,7 +7,7 @@
     @apply text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left;
   }
   h2 {
-    @apply mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight;
+    @apply text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8;
   }
   h3 {
     @apply mb-4 text-4xl lg:text-6xl leading-tight;
@@ -20,6 +20,9 @@
   }
   li {
     @apply list-disc  list-inside;
+  }
+  img{
+    @apply w-screen;
   }
 }
 

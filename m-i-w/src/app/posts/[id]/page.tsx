@@ -28,13 +28,13 @@ export default function Post({ params }: { params: { id: string } }) {
 
     // console.log(`content ${content}`);
     return (
-        <article className='container mx-auto md:px-6'>
+        <article className='container mx-auto md:px-6 mb-20'>
             <h1>{data.title}</h1>
             <div className='flex justify-between pb-6 max-w-2xl mx-auto text-lg'>
                 <div>{data.place}</div>
                 <Date dateString={data.date} />
             </div>
-            <ReactMarkdown className='max-w-2xl mx-auto'>
+            <ReactMarkdown className='max-w-2xl mx-auto text-lg'>
                 {content}
             </ReactMarkdown>
         </article>
