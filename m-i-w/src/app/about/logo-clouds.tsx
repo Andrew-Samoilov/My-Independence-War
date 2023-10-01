@@ -61,9 +61,6 @@ export default function LogoClouds() {
                     />
                     Tailwind Elements
                 </li>
-                <li className="h-full justify-center rounded lg:mb-0 flex flex-col items-center hover:bg-teal-200 dark:hover:bg-teal-700">
-                    Remark
-                </li>
             </ul>
         </section>
     )

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MyGallery from "@/components/myGalery/MyGallery";
 
 export default function Home({ pageProps }: any) {
   return (
@@ -27,16 +28,17 @@ export default function Home({ pageProps }: any) {
         {/* <!-- Jumbotron --> */}
 
         {/* Content */}
-        <section className="text-neutral-700 dark:text-neutral-200">
-          <p className="my-4">Scroll down</p>
-          <p className="mb-4">Scroll down</p>
-          <p className="mb-4">Scroll down</p>
-          <p className="mb-4">Scroll down</p>
-          <p className="mb-4">Scroll down</p>
-          <p className="mb-4">Scroll down</p>
-          <p className="mb-4">Scroll down</p>
-          <p className="mb-4">Scroll down</p>
+        <section className="text-neutral-700 dark:text-neutral-200 my-20">
+          <MyGallery />
         </section>
+        <p className="my-4">Scroll down</p>
+        <p className="mb-4">Scroll down</p>
+        <p className="mb-4">Scroll down</p>
+        <p className="mb-4">Scroll down</p>
+        <p className="mb-4">Scroll down</p>
+        <p className="mb-4">Scroll down</p>
+        <p className="mb-4">Scroll down</p>
+        <p className="mb-4">Scroll down</p>
       </main>
     </>
   )
