@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -25,7 +26,7 @@ export async function generateMetadata(
     { params, searchParams }: Props,
     parent: ResolvingMetadata
 ): Promise<Metadata> {
-    
+
     const { id } = params;
     const postFilePath = path.join(process.cwd(), 'posts', `${id}.md`);
     const fileContents = fs.readFileSync(postFilePath, 'utf-8');
@@ -60,6 +61,12 @@ export default function Post({ params, searchParams }: Props) {
     return (
         <article className='container mx-auto md:px-6 mb-20'>
             <h1>{data.title}</h1>
+            <Image
+                src={data.titleImage}
+                alt={data.title}
+                width={1080}
+                height={100}
+            />
             <div className='flex justify-between pb-6 max-w-2xl mx-auto text-lg'>
                 <div>{data.place}</div>
                 <Date dateString={data.date} />
