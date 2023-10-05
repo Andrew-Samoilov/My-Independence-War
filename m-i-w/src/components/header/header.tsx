@@ -5,8 +5,8 @@ import MainMenu from "../main-menu/MainMenu";
 
 export default function Header() {
     return (
-        <header className="sticky top-0 shadow-md  bg-gray-300 p-2 dark:bg-neutral-600 dark:text-neutral-200 ">
-            <nav className="container mx-auto md:px-6 flex justify-between">
+        <header className="sticky top-0 p-2 shadow-md dark:text-neutral-200 ">
+            <nav className="mx-auto md:px-6 flex justify-between">
                 <Logo />
 
                 <MainMenu

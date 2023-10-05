@@ -3,7 +3,7 @@ import { images } from './myGalleryData';
 
 export default function MyGallery() {
     return (
-        <div className="container mx-auto">
+        <div className="mx-auto">
             <div className="flex flex-wrap">
                 {images.map((image) => (
                     <div key={image.id} className="flex w-full md:w-1/2 lg:w-1/3 flex-wrap p-1 md:p-2">

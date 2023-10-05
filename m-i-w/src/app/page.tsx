@@ -25,7 +25,7 @@ export default function Home({ pageProps }: any) {
           Learn more
         </Link>
       </section>
-      <section className="text-neutral-700 dark:text-neutral-200 my-20">
+      <section>
         <MyGallery />
       </section>
       <section>

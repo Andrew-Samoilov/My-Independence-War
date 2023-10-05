@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         // <footer className="bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2 fixed inset-x-0 bottom-0">
         <footer className="bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2">
-            <div className="container mx-auto md:px-6 sm:grid sm:grid-rows-1 sm:grid-cols-3 gap-2 grid grid-cols-1">
+            <div className="mx-auto md:px-6 sm:grid sm:grid-rows-1 sm:grid-cols-3 gap-2 grid grid-cols-1">
             {/* <div className="flex justify-between sm:flex-col"> */}
                 <Logo
                     textLogo="My Independence War"
@@ -27,7 +27,9 @@ export default function Footer() {
                 </div>
             </div>
             {/* <!--Copyright section--> */}
-            <div className="bg-neutral-200 p-2 text-center dark:bg-neutral-700">
+            <hr className="dark:border-neutral-700" />
+            <div className="p-2 text-center">
+                
                 <span>© 2023 Copyright: </span>
                 <a
                     className="font-semibold text-neutral-600 dark:text-neutral-400"

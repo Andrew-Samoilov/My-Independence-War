@@ -14,7 +14,6 @@ interface PostData {
     };
 }
 
-
 import { Metadata, ResolvingMetadata } from 'next'
 
 type Props = {
@@ -44,7 +43,6 @@ export async function generateMetadata(
     }
 }
 
-
 export function generateStaticParams() {
     const res = getAllPostIds();
     return res;
@@ -59,7 +57,7 @@ export default function Post({ params, searchParams }: Props) {
 
     // console.log(`content ${content}`);
     return (
-        <article className='container mx-auto md:px-6 mb-20'>
+        <article className='mx-auto mb-20'>
             <h1>{data.title}</h1>
             <Image
                 src={data.titleImage}
@@ -67,7 +65,7 @@ export default function Post({ params, searchParams }: Props) {
                 width={1080}
                 height={100}
             />
-            <div className='flex justify-between pb-6 max-w-2xl mx-auto text-lg'>
+            <div className='sm:flex sm:justify-between pb-6 max-w-2xl mx-auto text-lg'>
                 <div>{data.place}</div>
                 <Date dateString={data.date} />
             </div>
