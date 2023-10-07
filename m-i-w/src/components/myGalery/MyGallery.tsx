@@ -13,7 +13,8 @@ export default function MyGallery() {
                             alt={image.alt}
                             width={image.imgWidth}
                             height={image.imgHeight}
-                            sizes="(max-width: 768px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 34vw"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            loading='eager'
                             className="block h-full w-full rounded-lg object-cover object-center"
                         />
                     </div>
