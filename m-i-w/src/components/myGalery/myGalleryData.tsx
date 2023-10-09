@@ -8,7 +8,7 @@ export const images = [
     },
     {
         id: 2,
-        alt: "Селфі на фоні броніка каски та автоматика",
+        alt: "Селфі       на фоні броніка каски та автоматика",
         src: "/images/posts-img/main/IMG_20220618_121047.jpg",
         imgWidth: 4623,
         imgHeight: 3460,
