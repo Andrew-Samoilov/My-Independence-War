@@ -11,7 +11,7 @@ export default function Header() {
 
                 <MainMenu
                     styleNav='hidden sm:block'
-                    styleUL="grid grid-cols-3 gap-8"
+                    styleUL="grid grid-cols-2 gap-8"
                     styleMenuItem="list-none"
                 />
 
