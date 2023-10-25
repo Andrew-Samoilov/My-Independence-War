@@ -4,21 +4,21 @@ import LogoClouds from "@/components/logo-coluds/logo-clouds";
 
 export default function Home({ pageProps }: any) {
   return (
-    <main className="flex flex-col items-center justify-between p-0  text-center bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-200">
+    <main className="flex flex-col items-center justify-between p-0 text-center bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-200">
       <section
-        className="p-6 sm:grid sm:grid-cols-2 sm:items-center bg-neutral-100 text-neutral-700 shadow-md dark:bg-neutral-900 dark:text-neutral-300 dark:shadow-black/30">
+        className="p-6 lg:container sm:grid lg:gap-6 lg:grid-cols-2 lg:items-center bg-neutral-100 text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
         <div>
-          <h2 className="mb-5 text-3xl font-semibold">Hi there!</h2>
-          <p className='md:max-w-xs mx-auto'>
-            This simple page uses cutting-edge <span className="text-teal-500">(React, Next JS, TypeScript, Tailwind)</span> technologies.
-          </p>
-          <hr className="sm:hidden my-6 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
+          <h2>Hi there!</h2>
+          <h3 className="lg:pb-10">
+            This page uses cutting-edge <span className="text-teal-500">(React, Next JS, TypeScript, Tailwind)</span> technologies.
+          </h3>
+          <hr className="lg:hidden my-6 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
         </div>
         
         <div>
-          <p className="mb-4 md:max-w-xs mx-auto">
-            Content talking about some of my Ukraine Independence War stories.
-          </p>
+          <h3>
+            Content talking some of my stories about the Ukraine Independence War.
+          </h3>
           <Link
             type="button"
             href='./time-line'
