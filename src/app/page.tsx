@@ -6,7 +6,7 @@ export default function Home({ pageProps }: any) {
   return (
     <main className="flex flex-col items-center justify-between p-0 text-center bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-200">
       <section
-        className="p-6 lg:container sm:grid lg:gap-6 lg:grid-cols-2 lg:items-center bg-neutral-100 text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
+        className="rounded-lg p-8 lg:max-w-5xl 2xl:max-w-7xl sm:grid gap-8 lg:grid-cols-2 lg:items-center bg-neutral-100 text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
         <div>
           <h2>Hi there!</h2>
           <h3 className="lg:pb-10">
@@ -16,7 +16,7 @@ export default function Home({ pageProps }: any) {
         </div>
         
         <div>
-          <h3>
+          <h3 className="xl:px-8">
             Content talking some of my stories about the Ukraine Independence War.
           </h3>
           <Link
