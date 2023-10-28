@@ -1,5 +1,7 @@
 import Logo from "../logo/Logo";
 import MainMenu from "../main-menu/MainMenu";
+import MobileMenu from "../mobile-menu/mobileMenu";
+
 // import ThemeSelect from "./ThemeSelect";
 // import LanguageSelect from "./LanguageSelect";
 
@@ -23,7 +25,7 @@ export default function Header() {
                     styleSelectLanguage='hidden sm:block'
                 /> */}
 
-                <button className="sm:hidden">Mobile menu</button>
+             <MobileMenu />
             </nav>
         </header >
     )
