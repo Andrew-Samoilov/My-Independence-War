@@ -59,7 +59,7 @@ export default function Contacts({ styleUl, styleLink }: IContactsProps) {
                         // clip-rule="evenodd"
                         />
                     </svg>
-                    +38097 3232 161</Link>
+                    +38 (097) 3232-161</Link>
             </li>
         </ul>
     )

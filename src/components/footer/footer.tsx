@@ -5,14 +5,14 @@ import Contacts from "../contacts/Contacts";
 export default function Footer() {
     return (
         <footer className="text-center sm:text-left bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2">
-            <div className="mx-auto grid gap-4 md:px-6 sm:grid-rows-1 sm:grid-cols-3  grid-cols-1">
+            <div className="lg:max-w-5xl 2xl:max-w-7xl  mx-auto grid gap-2 sm:gap-6 md:px-6 sm:grid-rows-1 sm:grid-cols-3 grid-cols-1">
                 <div>
                     <Logo
                         textLogo="My Independence War"
                         styleLogo="text-teal-500 font-bold"
                     />
                     <p className="italic text-sm">Ви можете допомогти:</p>
-                    <p>Приват 4731219644122388</p>
+                    <p className="pb-2">Приват 4731219644122388</p>
                     <hr className="sm:hidden dark:border-neutral-700 block" />
                 </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
                 />
 
                 <div className="pb-2">
-                    <hr className="sm:hidden dark:border-neutral-700 block" />
+                    <hr className="pb-2 sm:hidden dark:border-neutral-700 block " />
                     <p className="hidden sm:block font-semibold pb-2 text-center sm:text-left">Contacts</p>
                     <Contacts
                         styleUl='grid grid-cols-1 gap-2'
@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
             {/* <!--Copyright section--> */}
             <hr className="dark:border-neutral-700" />
-            <div className="p-2 text-center">
+            <div className="pt-2 text-center">
                 <span>© 2023 Copyright: </span>
                 <a className="font-semibold text-neutral-600 dark:text-neutral-400"
                     href="#"

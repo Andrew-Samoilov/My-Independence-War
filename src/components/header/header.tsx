@@ -8,7 +8,7 @@ import MobileMenu from "../mobile-menu/mobileMenu";
 export default function Header() {
     return (
         <header className="sticky top-0 p-2 bg-white dark:text-neutral-200 dark:bg-black">
-            <nav className="mx-auto md:px-6 flex justify-between">
+            <nav className="lg:max-w-5xl 2xl:max-w-7xl mx-auto md:px-6 flex justify-between">
                 <Logo />
 
                 <MainMenu
