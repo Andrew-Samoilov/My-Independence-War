@@ -46,7 +46,7 @@ export default function MobileMenu() {
 
             {
                 isOpen ? (
-                    <div className="fixed z-20 top-9 left-0 w-screen h-5/6 p-8 flex flex-col justify-between items-center bg-teal-300">
+                    <div className="fixed z-20 top-9 left-0 w-screen h-5/6 p-8 flex flex-col justify-between items-center bg-white dark:bg-black">
                         <hr className="w-2/3 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
                         <MainMenu
                             styleMenuItem="list-none"
