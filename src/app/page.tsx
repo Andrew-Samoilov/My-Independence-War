@@ -12,7 +12,7 @@ export default function Home({ pageProps }: any) {
           <h3 className="lg:pb-10">
             This page uses cutting-edge <span className="text-teal-500">(React, Next JS, TypeScript, Tailwind)</span> technologies.
           </h3>
-          <hr className="lg:hidden my-6 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
+          <hr className="-z-10 lg:hidden my-6 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:bg-neutral-800" />
         </div>
         
         <div>

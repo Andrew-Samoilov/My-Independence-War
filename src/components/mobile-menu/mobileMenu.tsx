@@ -10,9 +10,9 @@ export default function MobileMenu() {
     const handleClick = () => {
         setIsOpen(!isOpen);
 
-        //for stop scrollin when isOpen
-        // const html = document.querySelector('html');
-        // !isOpen ? html!.style.overflow = 'hidden' : html!.style.overflow = 'auto';
+        // for stop scrollin when isOpen
+        const html = document.querySelector('html');
+        !isOpen ? html!.style.overflow = 'hidden' : html!.style.overflow = 'auto';
 
         // if (!isOpen) {
         //     html!.style.overflow = 'hidden';
