@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='p-2'>
+    <html lang="en" className='px-2 pb-2'>
       <body>
         <Header />
         {children}
