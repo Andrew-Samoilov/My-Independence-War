@@ -15,7 +15,7 @@ export default function MyGallery() {
                             height={image.imgHeight}
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             loading={image.id === 1 ? 'eager' : 'lazy'}
-                            priority={image.id === 1 ? true : false }
+                            priority={image.id === 1}
                             className="block h-full w-full rounded-lg object-cover object-center"
                         />
                     </div>

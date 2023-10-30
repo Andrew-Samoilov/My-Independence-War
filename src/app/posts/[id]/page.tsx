@@ -64,6 +64,8 @@ export default function Post({ params, searchParams }: Props) {
                 alt={data.title}
                 width={1080}
                 height={100}
+                priority={true}
+                loading='eager'
             />
             <div className='sm:flex sm:justify-between pb-6 max-w-2xl mx-auto text-lg'>
                 <div>{data.place}</div>

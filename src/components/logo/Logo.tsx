@@ -5,7 +5,7 @@ interface LogoProps {
     styleLogo?: string;
 }
 
-export default function Logo({ styleLogo = 'font-bold text-teal-500 ', textLogo = 'MIW' }: LogoProps) {
+export default function Logo({ styleLogo = 'font-bold text-teal-700', textLogo = 'MIW' }: LogoProps) {
     return (
         <Link
             href="/"

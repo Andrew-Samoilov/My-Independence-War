@@ -19,7 +19,7 @@ export default function MobileMenu() {
         <>
             <button onClick={handleClick}
                 aria-label="Open mobile menu"
-                className="z-30 absolute top-3.5 right-3 flex flex-col justify-center items-center sm:hidden">
+                className="absolute top-3.5 right-3 flex flex-col justify-center items-center sm:hidden">
                 <span className={`bg-teal-500 block transition-all duration-300 ease-out 
                 h-0.5 w-6 rounded-sm ${isOpen ?
                         'rotate-45 translate-y-1' : '-translate-y-0.5'
@@ -39,7 +39,7 @@ export default function MobileMenu() {
 
             {
                 isOpen ? (
-                    <div className="fixed z-20 top-9 left-0 w-screen h-5/6 p-8 flex flex-col justify-between items-center bg-white dark:bg-black">
+                    <div className="fixed top-9 left-0 w-screen h-5/6 p-8 flex flex-col justify-between items-center bg-white dark:bg-black">
                         <hr className="w-2/3 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-30" />
                         <MainMenu
                             styleMenuItem="list-none"
