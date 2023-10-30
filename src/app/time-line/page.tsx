@@ -17,14 +17,10 @@ export default function TimeLine() {
         <section>
             <h1 className='text-center'>Time line</h1>
             <ul className='grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32'>
-                {allPostsData.map(({ id, date, title, titleImage }: any) => (
-                            // <li key={id} className="list-none relative bg-neutral-600/50">
+                {allPostsData.map(({ id, date, title, titleImage }: any, index) => (
                     <li key={id} className="list-none ">
                         <Link href={`/posts/${id}`} >
-                            <small className=' p-2 text-sm'>
-
-                                {/* </small><h2 className='text-white bg-neutral-600/50 p-2 m-0 absolute left-2 top-2'>{title}</h2>
-                                <small className='text-white bg-neutral-600/50 p-2 text-sm absolute right-0 bottom-2'> */}
+                            <small className='p-2 text-sm'>
                                 <Date dateString={date} />
                             </small>
                             {!titleImage ? '' :
@@ -33,6 +29,8 @@ export default function TimeLine() {
                                     alt={title}
                                     width={1080}
                                     height={100}
+                                    loading={index <= 1 ? 'eager' : 'lazy'}
+                                    priority={index <= 1}
                                 />}
                             <h2 className='p-2 m-0'>{title}</h2>
                         </Link>
