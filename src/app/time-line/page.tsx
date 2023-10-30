@@ -11,13 +11,14 @@ import { getSortedPostsData } from '@/lib/posts';
 
 export default function TimeLine() {
     const allPostsData = getSortedPostsData();
+    // console.log(allPostsData);
 
     return (
         <section>
             <h1 className='text-center'>Time line</h1>
-            <ul className='grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32'>
+            <ul className='grid z-10 grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32'>
                 {allPostsData.map(({ id, date, title, titleImage }: any) => (
-                    <li key={id} className="list-none -z-10 relative bg-neutral-600/50">
+                    <li key={id} className="list-none relative bg-neutral-600/50">
                         <Link href={`/posts/${id}`} >
                             {!titleImage ? '' :
                                 <Image
