@@ -5,6 +5,7 @@ import Header from '@/components/header/header';
 import Footer from '@/components/footer/footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('hhttps://my-independence-war.vercel.app/'),
   title: {
     template: '%s | My Independence War',
     default: 'My Independence War', 
