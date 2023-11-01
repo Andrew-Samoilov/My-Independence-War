@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     default: 'My Independence War', 
   },
   description: 'Technological demo project that talks about my Ukraine war stories',
+}
+
+export const viewport = {
   themeColor: '#257828',
 }
 
