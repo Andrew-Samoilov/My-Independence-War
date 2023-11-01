@@ -42,7 +42,7 @@ export default function MobileMenu() {
                     <div className="fixed top-9 left-0 w-screen h-5/6 p-8 flex flex-col justify-between items-center bg-white dark:bg-black">
                         <hr className="w-2/3 h-0.5 border-t-0 bg-main-color opacity-100 dark:opacity-30" />
                         <MainMenu
-                            styleMenuItem="list-none"
+                            styleMenuItem="list-none text-xl"
                             styleUL="grid grid-rows-2 gap-8"
                             onClickFunction={handleClick}
                         />
