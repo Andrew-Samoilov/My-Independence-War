@@ -9,7 +9,7 @@ export default function Footer() {
                 <div>
                     <Logo
                         textLogo="My Independence War"
-                        styleLogo="text-teal-500 font-bold"
+                        styleLogo="text-main-color font-bold"
                     />
                     <p className="italic text-sm">Ви можете допомогти:</p>
                     <p className="pb-2">Приват 4731219644122388</p>
