@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     default: 'My Independence War', 
   },
   description: 'Technological demo project that talks about my Ukraine war stories',
+  themeColor: '#257828',
 }
 
 export default function RootLayout({
