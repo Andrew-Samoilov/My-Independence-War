@@ -27,13 +27,6 @@ export default function Home({ pageProps }: any) {
           </Link>
         </div>
       </section>
-      {/* <section>
-        <ul>
-          <li><a></a></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section> */}
       <section>
         <MyGallery />
       </section>

@@ -1,11 +1,12 @@
 import Logo from "../logo/Logo";
 import MainMenu from "../main-menu/MainMenu";
 import Contacts from "../contacts/Contacts";
+import Link from "next/link";
 
 export default function Footer() {
     return (
         <footer className="text-center sm:text-left bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2">
-            <div className="lg:max-w-5xl 2xl:max-w-7xl  mx-auto grid gap-2 sm:gap-6 md:px-6 sm:grid-rows-1 sm:grid-cols-3 grid-cols-1">
+            <div className="lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-2 sm:gap-6 md:px-6 sm:grid-rows-1 sm:grid-cols-3 grid-cols-1">
                 <div>
                     <Logo
                         textLogo="My Independence War"
@@ -34,9 +35,9 @@ export default function Footer() {
             <hr className="dark:border-neutral-700" />
             <div className="pt-2 text-center">
                 <span>© 2023 Copyright: </span>
-                <a className="font-semibold text-neutral-600 dark:text-neutral-400"
+                <Link className="font-semibold text-neutral-600 dark:text-neutral-400"
                     href="#"
-                >My Independence War</a>
+                >My Independence War</Link>
             </div>
         </footer>
     )

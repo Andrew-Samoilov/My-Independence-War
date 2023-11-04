@@ -11,6 +11,6 @@ export default function LanguageSelect({ styleSelectLanguage }: LanguageSelectPr
         >
             <option value="English">Eng</option>
             <option value="Ukrainian">Укр</option>
-        </select>  
+        </select> 
     )
 }

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
     return (
         <section>
-            <h1 className="text-2xl text-center py-4">Contact me</h1>
+            <h1 className="text-center py-4">Contact me</h1>
             <Contacts
                 styleUl='pb-2'
                 styleLink='flex items-center justify-center p-4'
