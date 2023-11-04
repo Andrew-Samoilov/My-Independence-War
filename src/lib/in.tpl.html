@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="{$lang}">
+
+<head>
+    <meta name="theme-color" content="#5d6aa5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- sag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- sag -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"><!-- sag -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="icon" href="http://toursdekiev.com.ua/files/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://toursdekiev.com.ua/files/img/favicon.ico" type="image/x-icon">
+    <meta name="msvalidate.01" content="FB67872A32C2CB1DD78E408FED5B93BA" />
+    <meta name="verify-v1" content="RXr7X8xg/ThgCxM5D92m3++ek+Phf8aqcC42LaO4e2c=" />
+
+    <meta http-equiv="Content-Language" content="{$lang}" />
+
+    <title>{$title}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <link rel="stylesheet" type="text/css" href="/s/spf/s.css" />
+    <link rel="stylesheet" type="text/css" href="/csss" />
+
+    <link rel="stylesheet" type="text/css" href="http://toursdekiev.com.ua/files/img/tdk-custom.css" /> <!-- sag -->
+
+    {$head_tags}
+
+    {literal}
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-8065486-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    {/literal}
+
+</head>
+
+<body id="page_bg" class="main_bg_{$template_position}">
+
+    <main id="main">
+        <div id="kehys">
+            <div id="boxes">
+                <div id="kehys_wrap">
+                    <div id="header" class="hidden-xs"
+                        style="background-repeat: no-repeat; background-position: center;"> <!-- style sag -->
+                        {include file="top_right_menu.tpl.html"}
+                        {include file="file:menu_additional.tpl.html"}
+                        <div style="clear: both;"></div>
+                        <div id="logo">
+                            <a href="/{$lang}" title="Tours De Kyiv logo">{$logo}</a>
+                        </div>
+                    </div>
+                    <div id="mainnavi">
+                        <div id="mainnavi_left">
+                            <div id="mainnavi_right">
+                                <div id="navi">
+                                    {include file='menu_top.tpl.html'}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container"> <!-- sag -->
+                        <div class="colmask columns row"><!-- sag colrightcolor     -->
+                            <div class="colmid colmaincolor"><!--    sag -->
+                                <div class="colleft">
+                                    <div class="col1wrap">
+                                        <div class="col1 col-md-9 col-md-push-3"><!--   sag -->
+
+                                            <!--Main column start-->
+                                            <div id="page_content">
+                                                <div style="height: 1px;"></div>
+
+                                                {if $breadcrumbs}
+                                                <div itemscope itemtype="http://schema.org/WebPage">
+                                                    <div itemprop="breadcrumb" class="breadcrumbs"
+                                                        style="padding-top: 1em; margin-top: 1.5em;">
+                                                        {foreach item=link from=$breadcrumbs name="breadcrumbs"}
+                                                        {if $smarty.foreach.breadcrumbs.last}
+                                                        {$link.title_short}
+                                                        {else}
+                                                        <a href="{$link.link}">{$link.title_short}</a> &gt;
+                                                        {/if}
+                                                        {/foreach}
+                                                    </div>
+                                                </div>
+                                                {/if}
+
+
+                                                {if $page_content_title}
+                                                <h2>{$page_content_title}</h2>
+                                                {else}
+                                                <h1>{$title}</h1>
+                                                {/if}
+                                                <div style="width: 99%;">
+                                                    <p>
+                                                        {$page_text}
+                                                        &nbsp;<!--Если удалить этот пробел, в IE наблюдаются глюки-->
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {if $containers.center}
+                                            <div class="center_container">
+                                                {include file="container.tpl.html" c=$containers.center}
+                                            </div>
+                                            {/if}
+
+                                            <div style="clear: both; border: 0; height: 0;"></div>
+
+                                            <!--Main column end-->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col2 col-md-3 col-md-pull-9"><!--   sag -->
+
+                                        <!--left column start-->
+                                        {if $containers.left}
+                                        <div class="left_section">
+                                            {include file="container.tpl.html" c=$containers.left}
+                                            {assign var="content_left_margin"}<!--  value="200px"  sag -->
+                                        </div>
+                                        {else}
+                                        {assign var="content_left_margin" value="0"}
+                                        {/if}
+                                        <!--left column end-->
+                                    </div>
+                                    <!-- SAG delete Right column -->
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- SAG container -->
+
+
+
+                    <footer class="bottom" id="footer" style="text-align: center">
+                        Copyright &copy; by <a href="/">ToursDeKiev</a>
+                        {include file='file:counters.tpl.html'}
+                    </footer>
+
+                </div>
+
+
+                <div style="clear: both;"></div>
+
+            </div>
+        </div>
+    </main>
+    </div>
+
+</body>
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><!-- sag -->
+<script defer src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><!-- sag -->
+<script defer src='https://www.google.com/recaptcha/api.js'></script><!-- s ag -->
+
+</html>

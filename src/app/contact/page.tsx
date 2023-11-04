@@ -1,4 +1,5 @@
 import Contacts from "@/components/contacts/Contacts";
+import ContactForm from "@/components/form/Form";
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -14,8 +15,9 @@ export default function ContactPage() {
                 styleLink='flex items-center justify-center p-4'
             />
             <hr />
-            <h2 className="text-xl text-center">Form</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis aliquam provident tenetur? Similique eos delectus assumenda sequi ipsa incidunt cumque officia deserunt. Perspiciatis officia soluta dignissimos sapiente voluptates, magnam hic.</p>
+            {/* <h2 className="text-xl text-center">Form</h2> */}
+            {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis aliquam provident tenetur? Similique eos delectus assumenda sequi ipsa incidunt cumque officia deserunt. Perspiciatis officia soluta dignissimos sapiente voluptates, magnam hic.</p> */}
+            <ContactForm/>
         </section>
     )
 }
