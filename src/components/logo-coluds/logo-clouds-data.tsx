@@ -24,4 +24,9 @@ export const logos = [
         alt: "Tailwind Elements",
         src: "/images/logos/logo-tailwind-elements.svg",
     },
+    {
+        id: 6,
+        alt: "React Hook Forms",
+        src: "/images/logos/logo-react-hook-form.svg",
+    },
 ]

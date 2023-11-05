@@ -26,7 +26,6 @@ export default function ContactForm() {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm<Inputs>({ resolver })
     const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
