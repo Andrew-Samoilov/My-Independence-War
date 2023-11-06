@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,9 +23,23 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/_time-line-old/_page.tsx", "src/app/_time-line-old/_._", "src/app/_time-line-old/page.tsx", "src/app/posts/[id]/old-page.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/_time-line-old/_page.tsx",
+    "src/app/_time-line-old/_._",
+    "src/app/_time-line-old/page.tsx",
+    "src/app/posts/[id]/old-page.tsx",
+    "src/app/api/te/route.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
