@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         'main-color': '#257828',
+        //Also need change in tailwind.config.ts
+        
       }
     }
   }
