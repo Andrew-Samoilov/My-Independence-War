@@ -30,7 +30,6 @@ export default function ContactForm() {
                 <input placeholder="Enter you name"
                     {...register("name", { required: true })}
                     className="border-2 p-2" />
-
             </div>
             <div className="flex flex-col lg:w-1/2">
                 <label>Email</label>
