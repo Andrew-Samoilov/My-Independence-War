@@ -2,7 +2,7 @@ import { FormData } from '@/components/form/Form'
 
 export function sendEmail(data: FormData) {
     const apiEndpoint = '/api/email';
-
+    
     // console.log(`send-email`,data);
 
     fetch(apiEndpoint, {
@@ -11,11 +11,11 @@ export function sendEmail(data: FormData) {
     })
         .then((res) => res.json())
         .then((response) => {
-            console.log(response);
+            console.log(response);        
             alert(response.message);
         })
         .catch((err) => {
-            console.log(err);
+            console.log(err);       
             alert(err);
         });
 }

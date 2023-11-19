@@ -9,7 +9,6 @@ export type FormData = {
     check: boolean
 }
 
-
 export default function ContactForm() {
 
     function onSubmit(data: FormData) {
@@ -48,6 +47,6 @@ export default function ContactForm() {
                 <label>Send me a copy of this message</label>
             </div>
             <input type="submit" className="bg-neutral-200 font-bold text-main-color px-4 py-2 rounded-md" />
-        </form>
+        </form>     
     )
 }

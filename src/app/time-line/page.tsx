@@ -32,6 +32,7 @@ export default function TimeLine() {
                                     height={100}
                                     loading={index <= 1 ? 'eager' : 'lazy'}
                                     priority={index <= 1}
+                                    className='hover:scale-105 duration-300'
                                 />}
                             <h2 className='p-2 m-0'>{title}</h2>
                         </Link>
