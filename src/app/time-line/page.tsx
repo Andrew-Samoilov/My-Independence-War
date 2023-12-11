@@ -74,14 +74,16 @@ export default function TimeLine() {
               {/* Card */}
               <Link
                 href={`/posts/${id}`}
-                className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow"
+                className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-1 md:p-4 rounded border border-slate-200 shadow"
               >
                 <div className="flex justify-between flex-col space-x-2 mb-1">
                   <h2 className=" text-slate-900 m-0 pb-1 font-semibold">
                     {title}
                   </h2>
                   {/* <time className="font-medium text-slate-500"> */}
-                  <Date dateString={date} />
+                  <span className="text-slate-500 text-right">
+                    <Date dateString={date} />
+                  </span>
                 </div>
                 {!titleImage ? (
                   ""
