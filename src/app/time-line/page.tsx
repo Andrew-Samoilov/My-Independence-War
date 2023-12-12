@@ -14,7 +14,7 @@ export default function TimeLine() {
     // console.log(allPostsData);
 
     return (
-      <section className="">
+      <section className="lg:max-w-5xl 2xl:max-w-7xl">
         <h1 className="text-center">Time line</h1>
 
         <div
@@ -28,7 +28,9 @@ export default function TimeLine() {
             >
               {/* Icon */}
               <div
-                className="mt-1 md:mt-8 flex items-center justify-center w-10 h-10 rounded-full border border-white dark:border-black bg-slate-300 group-[.is-active]:bg-slate-200 shadow shrink-0 md:order-1 md:group-even:-translate-x-1/2 
+                className="mt-1 md:mt-8 flex items-center justify-center w-10 h-10 rounded-full border border-white dark:border-slate-800
+                 bg-slate-300 dark:bg-slate-700 
+                 group-[.is-active]:bg-slate-200 dark:group-[.is-active]:bg-slate-700 shadow shrink-0 md:order-1 md:group-even:-translate-x-1/2 
               md:group-odd:translate-x-1/2"
               >
                 <svg
@@ -46,11 +48,11 @@ export default function TimeLine() {
               {/* Card */}
               <Link
                 href={`/posts/${id}`}
-                className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-1 md:p-4 rounded border border-slate-200 shadow
+                className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white dark:bg-neutral-700 p-1 md:p-4 rounded border border-slate-200 dark:border-slate-800 shadow
                 flex flex-col group-odd:items-end"
               >
                 <div className="flex justify-between flex-col space-x-2 mb-1 ">
-                  <h2 className=" text-slate-900 m-0 pb-1 font-semibold ">
+                  <h2 className=" text-slate-900 dark:text-slate-300 m-0 pb-1 font-semibold ">
                     {title}
                   </h2>
                   {/* <time className="font-medium text-slate-500"> */}
@@ -68,7 +70,7 @@ export default function TimeLine() {
                     height={100}
                     loading={index <= 1 ? "eager" : "lazy"}
                     priority={index <= 1}
-                    className="hover:scale-105 duration-300 md:w-2/3"
+                    className="hover:scale-105 duration-300 md:w-4/5"
                   />
                 )}
               </Link>
