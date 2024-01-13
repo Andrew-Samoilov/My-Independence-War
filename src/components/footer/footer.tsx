@@ -4,6 +4,8 @@ import Contacts from "../contacts/Contacts";
 import Link from "next/link";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
     return (
       <footer className="text-center sm:text-left bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 p-2">
         <div className="lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-2 sm:gap-6 md:px-6 sm:grid-rows-1 sm:grid-cols-3 grid-cols-1">
@@ -33,13 +35,12 @@ export default function Footer() {
             />
           </div>
         </div>
-        {/* <!--Copyright section--> */}
         <hr className="dark:border-neutral-700" />
         <div className="pt-2 text-center">
-          <span>© 2023 Copyright: </span>
+          <span>© {currentYear} Copyright: </span>
           <Link
             className="font-semibold text-neutral-600 dark:text-neutral-400"
-            href="#"
+            href="/"
           >
             My&nbsp;Independence&nbsp;War
           </Link>
