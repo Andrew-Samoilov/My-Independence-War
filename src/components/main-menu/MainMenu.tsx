@@ -7,7 +7,7 @@ interface MainMenuProps {
     styleMenuItem?: string;
 }
 
-export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunction }: MainMenuProps) {
+export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunction }: Readonly<MainMenuProps>) {
 
     let items = [
         {
@@ -23,31 +23,18 @@ export default function MainMenu({ styleNav, styleUL, styleMenuItem, onClickFunc
     ];
 
     return (
-        <nav className={styleNav}>
-            <ul className={styleUL}>
-                {items.map(({ id, text, link }) => (
-                    <li
-                        key={id}
-                        className={styleMenuItem}
-                        onClick={onClickFunction}>
-                        <Link href={link}>{text}</Link>
-                    </li>
-                ))}
-
-
-                {/* <li className={styleMenuItem}
-                    onClick={onClickFunction}>
-                    <Link href="/time-line">Time line</Link>
-                </li>
-                <li className={styleMenuItem} onClick={onClickFunction}>
-                    <Link href="/map-view">Map view</Link>
-                </li> 
-                <li className={styleMenuItem}
-                    onClick={onClickFunction}>
-                    <Link href="/contact">Contact</Link>
-                </li> */}
-
-            </ul>
-        </nav>
-    )
+      <nav className={styleNav}>
+        <ul className={styleUL}>
+          {items.map(({ id, text, link }) => (
+            <li
+              key={id}
+              className={styleMenuItem}
+              onClick={onClickFunction}
+            >
+              <Link href={link}>{text}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    );
 }

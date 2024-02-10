@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Time Line",
-    };
+};
 
     import { getSortedPostsData } from "@/lib/posts";
 

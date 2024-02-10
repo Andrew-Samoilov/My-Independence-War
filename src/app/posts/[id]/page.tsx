@@ -48,7 +48,7 @@ export function generateStaticParams() {
     return res;
 }
 
-export default function Post({ params, searchParams }: Props) {
+export default function Post({ params, searchParams }: Readonly<Props>) {
     const { id } = params;
     const postFilePath = path.join(process.cwd(), 'posts', `${id}.md`);
     // console.log(`postFilePath ${postFilePath}`);

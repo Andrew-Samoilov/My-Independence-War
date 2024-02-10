@@ -42,11 +42,10 @@ export function getAllPostIds() {
 
     let res = fileNames.map((fileName) => {
         const id = fileName.replace(".md", "");
-
-        // console.log(`id2 ${id}`);
+        // console.log(`getAllPostIds id ${id}`);
         return { id };
     });
-
+    // console.log(`getAllPostIds res `, res);
     return res;
 }
 
